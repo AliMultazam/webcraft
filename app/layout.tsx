@@ -6,7 +6,7 @@ import Navigation from "@/components/navigation"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "solusimu",
+  title: "WebCraft",
   description: "Crafting Digital Experiences That Convert",
 }
 
@@ -17,6 +17,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/Tag.png" />
+        {/* ...tambahkan tag lain jika perlu... */}
+      </head>
       <body className={inter.className}>
         <Navigation />
         {children}
