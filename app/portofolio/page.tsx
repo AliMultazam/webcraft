@@ -152,11 +152,11 @@ export default function Component() {
             return (
               <Card
                 key={project.id}
-                className="bg-slate-800/50 border-slate-700/50 backdrop-blur-sm hover:bg-slate-800/70 transition-all duration-300 group"
+                className="bg-slate-800/50 border-slate-700/50 backdrop-blur-sm hover:bg-slate-800/70 transition-all duration-300 group hover:-translate-y-2 hover:shadow-2xl"
               >
                 <CardHeader className="pb-4">
                   <div className="w-16 h-16 bg-slate-700/50 rounded-xl flex items-center justify-center mb-4 group-hover:bg-slate-700/70 transition-colors">
-                    <IconComponent className="w-8 h-8 text-slate-400" />
+                    <IconComponent className="w-8 h-8 text-slate-400 transition-transform duration-300 group-hover:scale-110" />
                   </div>
                   <Badge
                     className="w-fit bg-gradient-to-r from-purple-500/20 to-blue-500/20 text-purple-300 border-purple-500/30"
@@ -188,8 +188,8 @@ export default function Component() {
                         data-variant={button.variant}
                         className={
                           button.variant === "default"
-                            ? "bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 text-white border-0"
-                            : "border-slate-600 text-slate-300 hover:text-white hover:border-slate-500 bg-transparent"
+                            ? "bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 text-white border-0 transition-all"
+                            : "border-slate-600 text-slate-300 hover:text-white hover:border-slate-500 bg-transparent transition-all"
                         }
                       >
                         {button.label}
